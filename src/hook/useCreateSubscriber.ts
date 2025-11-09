@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { subscriberClient } from '@/client/SubscriberClient'
-import type { ContactRequest, ContactView } from '@/model/view/contact'
+import type { ContactView } from '@/model/view/contact'
+import type { ContactRequest } from '@/model/api/contact'
 
 export const useCreateSubscriber = () => {
   const [isLoading, setIsLoading] = useState(false)
