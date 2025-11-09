@@ -1,5 +1,4 @@
 import "./App.css";
-import { useState } from "react";
 import {
   Empty,
   EmptyContent,
@@ -15,7 +14,6 @@ import SubscriberList from "@/components/domain/SubscriberList";
 import { cn } from "./lib/utils";
 
 function App() {
-  const [domain, setDomain] = useState(".com");
   let refetchSubscribers: (() => Promise<void>) | null = null;
 
   const handleContactSubmit = (data: { email: string; phone: string }) => {
@@ -35,7 +33,7 @@ function App() {
             className="text-5xl font-bold text-accent text-center max-w-2xl mx-auto px-8"
             style={{ fontFamily: "Lucida Console, monospace" }}
           >
-            {`ethan builds {${domain}}`}
+            {`ethan builds {.com}`}
           </h1>
         </div>
         <div className="max-w-2xl mx-auto px-8 py-8">
