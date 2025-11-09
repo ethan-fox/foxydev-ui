@@ -3,7 +3,7 @@ name: Deploy to GCP
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - '*.*.*'
 
 env:
   GCS_BUCKET: portfolio-ui-frontend
