@@ -9,9 +9,10 @@ import {
 } from "@/components/ui/empty";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Toaster } from "@/components/ui/sonner";
-import ContactInfoInput from "@/components/domain/contact-info-input";
+import ContactInfoInput from "@/components/domain/ContactInfoInput";
 import SubscriberList from "@/components/domain/SubscriberList";
 import HomeBanner from "@/components/domain/HomeBanner";
+import NavigationMenu from "@/components/custom/NavigationMenu";
 import { cn } from "./lib/utils";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Toaster position="bottom-right" />
       <div className="min-h-screen bg-background">
         <HomeBanner />
+        <NavigationMenu />
         <div className="max-w-2xl mx-auto py-8">
           {/* TODO nail down styling better. */}
           <Empty className={cn("bg-muted/5")}>

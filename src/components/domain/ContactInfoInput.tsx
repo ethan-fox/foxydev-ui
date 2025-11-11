@@ -5,8 +5,8 @@ import { toast } from "sonner"
 import { FieldSet } from "@/components/ui/field"
 import { Button } from "@/components/ui/button"
 
-import UniformFieldGroup from "@/components/custom/uniform-field-group"
-import StyledField from "@/components/custom/styled-field"
+import UniformFieldGroup from "@/components/custom/UniformFieldGroup"
+import StyledField from "@/components/custom/StyledField"
 import { isValidEmail, isValidPhone, formatPhoneNumber } from "@/util/validation"
 import { useCreateSubscriber } from "@/hook/useCreateSubscriber"
 
