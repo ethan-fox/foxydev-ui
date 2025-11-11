@@ -11,6 +11,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Toaster } from "@/components/ui/sonner";
 import ContactInfoInput from "@/components/domain/contact-info-input";
 import SubscriberList from "@/components/domain/SubscriberList";
+import HomeBanner from "@/components/domain/HomeBanner";
 import { cn } from "./lib/utils";
 
 function App() {
@@ -28,16 +29,8 @@ function App() {
     <>
       <Toaster position="bottom-right" />
       <div className="min-h-screen bg-background">
-        <div className="bg-primary py-8">
-          <h1
-            className="text-5xl font-bold text-accent text-center max-w-2xl mx-auto px-8"
-            style={{ fontFamily: "Lucida Console, monospace" }}
-          >
-            {`ethan builds {.com}`}
-          </h1>
-        </div>
-        <div className="max-w-2xl mx-auto px-8 py-8">
-
+        <HomeBanner />
+        <div className="max-w-2xl mx-auto py-8">
           {/* TODO nail down styling better. */}
           <Empty className={cn("bg-muted/5")}>
             <EmptyHeader>
